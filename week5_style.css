@@ -43,7 +43,7 @@ display:display-box;
     box-sizing: border-box;
     width: 300px;
     padding: 10px;
-    margin: 10px:
+    margin: 10px;
 }
 
 #special {
@@ -59,7 +59,12 @@ display:display-box;
     background-color: #640303;
     color: #fbfbfc;
     border: 2px solid #350982;
-    border-radius: 5px;
-    width: 1cqi;
+    border-radius: 10px;
+    width: 100px;
     height: 100px;
+}
+
+.fixed:hover {
+    transform: translate(-5px, 5px);
+    box-shadow: 5px 5px 10px #350982;
 }
