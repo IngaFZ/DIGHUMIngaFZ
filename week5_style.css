@@ -3,6 +3,11 @@ background-color: #f0f0f0;
 font-family: Arial, sans-serif;
 }
 
+p {
+    max-width: 400px;
+    margin: 0px auto;
+}
+
 span {
     background-color: #c3eb13;
 }
@@ -26,6 +31,8 @@ display:display-box;
     width: 400px;
     height: 200px;
     padding: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
     margin: 30px;
 }
 
@@ -37,4 +44,10 @@ display:display-box;
     width: 300px;
     padding: 10px;
     margin: 10px:
+}
+
+#special {
+    position: relative;
+    top: 50px;
+    left: 50px;
 }
