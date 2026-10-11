@@ -51,3 +51,15 @@ display:display-box;
     top: 50px;
     left: 50px;
 }
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #640303;
+    color: #fbfbfc;
+    border: 2px solid #350982;
+    border-radius: 5px;
+    width: 1cqi;
+    height: 100px;
+}
