@@ -11,12 +11,30 @@ span {
 background-color: #bebdf7;
 color: #350982;
 font-size: 16px;
-display: box;
+display:display-box;
 }
 
 .adjust {
-
     color: #350982;
     font-size: 16px;
     display: inline;
+}
+
+.adjust_layout {
+    background-color: #e95fb2;
+    border: 2px solid #350982;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.my_container {
+    background-color: #bbe95f;
+    border: 5px solid #350982;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px;
+    margin: 10px:
 }
