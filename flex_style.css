@@ -11,4 +11,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
 }
