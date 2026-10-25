@@ -18,7 +18,7 @@ body {
 .collection:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
-    background-color: #5425d5;
+    background-color: #d9d2eb;
 }
 
 @media (max-width: 768px) {
