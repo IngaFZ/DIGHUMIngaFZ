@@ -10,10 +10,13 @@ body {
     display: grid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 24px;
-    grid-template-columns: 1fr 150px 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 100px;
     gap: 1rem;
     padding: 1rem;
+    grid-template-areas:
+        "manuscript book newspaper map"
+        "photograph photograph letter letter";
 }
 
 .collection {
@@ -57,8 +60,12 @@ body {
 @media (max-width: 768px) {
     .collections {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas:
+            "manuscript book"
+            "newspaper map"
+            "photograph letter";
+        }
 
     .collection {   
         background-color: #e7f09b;
@@ -68,6 +75,15 @@ body {
 @media (max-width: 480px) {
     .collections {
         background-color: #59aaec;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "manuscript"
+            "book"
+            "newspaper"
+            "map"
+            "photograph"
+            "letter";
     }
 
     .collection {   
