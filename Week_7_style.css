@@ -31,19 +31,19 @@ body {
 }
 
 .book {
-    grid-area:book;
+    grid-area:books;
 }
 
 .newspaper {
-    grid-area:newspaper;
+    grid-area:newspapers;
 }
 
 .map {
-    grid-area:map;
+    grid-area:maps;
 }
 
 .photograph {
-    grid-area:photograph;
+    grid-area:photographs;
 }
 
 .letter {
