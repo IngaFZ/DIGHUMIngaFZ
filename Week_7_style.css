@@ -10,7 +10,7 @@ body {
     display: grid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 24px;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
     gap: 1rem;
     padding: 1rem;
