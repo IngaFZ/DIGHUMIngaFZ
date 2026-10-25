@@ -23,13 +23,35 @@ body {
     border: 3px solid #0f22f0;
 }
 
+.manuscript {
+    grid-area:manuscript;
+}
+
+.book {
+    grid-area:book;
+}
+
+.newspaper {
+    grid-area:newspaper;
+}
+
+.map {
+    grid-area:map;
+}
+
+.photograph {
+    grid-area:photograph;
+}
+
+.letter {
+    grid-area:letter;
+}
+
+
 .collection:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
     background-color: #e7f09b;
-   
-    
-
 }
 
 @media (max-width: 768px) {
