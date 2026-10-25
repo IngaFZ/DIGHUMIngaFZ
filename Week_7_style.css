@@ -15,8 +15,8 @@ body {
     gap: 1rem;
     padding: 1rem;
     grid-template-areas:
-        "manuscript book newspaper map"
-        "photograph photograph letter letter";
+        "manuscript books newspapers maps"
+        "photographs photographs letters letters";
 }
 
 .collection {
