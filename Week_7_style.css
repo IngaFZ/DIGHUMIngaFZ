@@ -39,7 +39,7 @@ body {
 }
 
 .map {
-    grid-area:maps;
+    grid-area: maps;
 }
 
 .photograph {
@@ -59,12 +59,12 @@ body {
 
 @media (max-width: 768px) {
     .collections {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 200px 200px 200px;
         grid-template-areas:
-            "manuscript book"
-            "newspaper map"
-            "photograph letter";
+            "manuscript books"
+            "newspapers maps"
+            "photographs letters";
         }
 
     .collection {   
@@ -84,7 +84,7 @@ body {
             "maps"
             "photographs"
             "letters";
-            
+
     }
 
     .collection {   
