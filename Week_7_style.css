@@ -9,6 +9,7 @@ body {
 .collections {
     display: grid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
     grid-template-columns: 1fr 150px 1fr;
     grid-template-rows: auto;
     gap: 1rem;
