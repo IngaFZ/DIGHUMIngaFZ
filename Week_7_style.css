@@ -27,15 +27,15 @@ body {
 }
 
 .manuscript {
-    grid-area:manuscript;
+    grid-area: manuscript;
 }
 
 .book {
-    grid-area:books;
+    grid-area: books;
 }
 
 .newspaper {
-    grid-area:newspapers;
+    grid-area: newspapers;
 }
 
 .map {
@@ -43,11 +43,11 @@ body {
 }
 
 .photograph {
-    grid-area:photographs;
+    grid-area: photographs;
 }
 
 .letter {
-    grid-area:letters;
+    grid-area: letters;
 }
 
 
@@ -79,10 +79,10 @@ body {
         grid-template-rows: auto;
         grid-template-areas:
             "manuscript"
-            "book"
-            "newspaper"
-            "map"
-            "photograph"
+            "books"
+            "newspapers"
+            "maps"
+            "photographs"
             "letter";
     }
 
