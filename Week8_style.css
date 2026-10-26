@@ -1,0 +1,14 @@
+body {
+    background-color: #f0f0f0;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.archive-card:hover {
+    transform: translateY(-8px);
+    background-color: #299e5a;
+    transform: scale(1.5);
+}
