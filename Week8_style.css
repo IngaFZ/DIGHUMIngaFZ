@@ -7,7 +7,7 @@ body {
     border-radius: 5px;
 }
 
-.archive-card :hover {
+.archive-card:hover {
     transform: translateY(-8px);
     background-color: #d0f309;
     transform: scale(1.5);
@@ -17,4 +17,33 @@ body {
     background-color: #dc3985;
     border: 5px solid #d31111;
     transition: background-color 500ms ease;
+}
+
+.box2 {
+    background-color: #ca1717;
+    border: 5px solid #9e0c0c;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.box2:hover {
+    animation: reveal-record 800ms ease-out both;
+}
+
+@keyframes reveal-record {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+        background-color: #ca1717;
+    }
+
+    middle {
+        opacity: 0.5;
+        transform: translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
