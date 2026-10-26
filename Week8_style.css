@@ -7,8 +7,14 @@ body {
     border-radius: 5px;
 }
 
-.archive-card:hover {
+.archive-card :hover {
     transform: translateY(-8px);
-    background-color: #299e5a;
+    background-color: #d0f309;
     transform: scale(1.5);
+}
+
+.archive-card {
+    background-color: #dc3985;
+    border: 5px solid #d31111;
+    transition: background-color 500ms ease;
 }
