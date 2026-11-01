@@ -21,28 +21,30 @@ body {
 }
 
 .box2 {
-    background-color: #ca1717;
-    border: 5px solid #9e0c0c;
+    background-color: #bc4e4e;
+    border: 5px solid #ed5353;
     padding: 30px;
     margin: 10px;
     border-radius: 5px;
 }
 
-.box2:hover {
-    animation: reveal-record 800ms ease-out both;
+    .box2:hover {
+    animation: reveal-record 2800ms ease-out both;
 }
 
 @keyframes reveal-record {
     from {
         opacity: 0;
         transform: translateX(-35px);
-        background-color: #ca1717;
+        background-color: #ea8b8b;
     }
 
-    middle {
+    50% {
         opacity: 0.5;
         transform: translateX(-15px);
+        background-color: #daea8b;
     }
+    
     to {
         opacity: 1;
         transform: translateX(0);
