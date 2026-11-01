@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #b3aeae;
     margin: 10px;
     font-family: Arial, sans-serif;
     padding: 10px;
@@ -8,15 +8,16 @@ body {
 }
 
 .archive-card:hover {
-    transform: translateY(-8px);
-    background-color: #d0f309;
+    transform: translateY(-30px);
+    background-color: #dde4b4;
     transform: scale(1.5);
+    transition: transform 500ms ease;
 }
 
 .archive-card {
-    background-color: #dc3985;
-    border: 5px solid #d31111;
-    transition: background-color 500ms ease;
+    background-color: #ead2dd;
+    border: 2px solid #f35555;
+    transition: transform 500ms ease, background-color 500ms ease;
 }
 
 .box2 {
