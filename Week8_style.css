@@ -43,6 +43,7 @@ body {
         opacity: 0.5;
         transform: translateX(-15px);
         background-color: #daea8b;
+        rotate: 10deg;
     }
     
     to {
