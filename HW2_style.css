@@ -21,8 +21,14 @@ body {
 .puns {
     background-color: #ece6e6;
     display: grid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     grid-template-columns: repeat(5, 1fr);
-    font-size: 20px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
     gap: 10px;
     margin-top: 20px;
+    grid-template-areas: "pun1 pun2 pun3 pun4 pun5"
+        "pun6 pun7 picture picture picture";
+
 }
