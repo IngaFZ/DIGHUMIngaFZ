@@ -1,5 +1,6 @@
 .header {
     margin: 10px;
+    background-color: #ece6e6;
     padding: 1rem;
     font-family: Arial, sans-serif;
     display: grid;
@@ -15,17 +16,39 @@
     color: #222222;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
 }
 
-.header-content {
+.hero {
     display: grid;
-    font-size: 20px;
+    font-family: Arial, sans-serif;font-size: 20px;
     color: #000000;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2fr, 1fr, 1fr);
     gap: 10px;
 }
 
+.desktopad {
+    margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: #c2c4c7;
+  color: #222222;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+
+
 .puns {
+    font-family: Arial, sans-serif;
     background-color: #ece6e6;
     display: grid;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
