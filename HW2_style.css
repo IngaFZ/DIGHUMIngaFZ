@@ -1,4 +1,4 @@
-/* Mobile first: phones, under 576px */
+/* Mobile phones */
 * {
   box-sizing: border-box;
 }
@@ -132,7 +132,6 @@ h2 {
   margin: 0;
 }
 
-/* Ads: responsive visibility using display: none */
 .ad {
   grid-area: ad;
   display: flex;
