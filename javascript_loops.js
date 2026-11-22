@@ -14,3 +14,13 @@ switch (documentType) {
         console.log("Unknown document type");
 }
 console.log("Regular flow resumes");
+
+console.log("While loops");
+let year = 1918;          // Starting value
+while (year <= 1923) {   // Continue while true
+    console.log(year);
+    year++;              // Change the value
+}
+// Output: 1918, 1919, 1920, 1921, 1922, 1923
+console.log("While loop is over");
+
