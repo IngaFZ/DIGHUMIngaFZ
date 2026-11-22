@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* 2 box styles */
+.red-box {
+    background-color: #ffcccc;
+    padding: 20px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.blue-box {
+    background-color: #cce5ff;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 123, 255, 0.3);
+}
