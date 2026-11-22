@@ -1,42 +1,162 @@
+/* Mobile first: phones, under 576px */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e2dddd;
+  color: #222222;
+}
+
+a {
+  color: #1a4f8b;
+}
+
+h1,
+h2 {
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+.page {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "brand brand"
+    "nav tools"
+    "cta cta"
+    "feature feature"
+    "ad ad"
+    "listing listing"
+    "footer footer";
+}
+
+.page > * {
+  background-color: #ece6e6;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .header {
-    margin: 10px;
-    background-color: #ece6e6;
-    padding: 1rem;
-    font-family: Arial, sans-serif;
-    display: grid;
-    grid-area: grid-line;
-    grid-template-columns: (1 fr 1 fr 1 fr 1fr 1fr);
-    text-align: center;
-    gap: 10px;
-    background-color: #e2dddd;
+  display: contents;
 }
 
-.feature {
-    font-size: 1.1rem;
-    color: #222222;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 10px;
+.header > * {
+  background-color: #ece6e6;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero {
-    display: grid;
-    font-family: Arial, sans-serif;font-size: 20px;
-    color: #000000;
-    grid-template-columns: repeat(2fr, 1fr, 1fr);
-    gap: 10px;
+.brand {
+  grid-area: brand;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.desktopad {
-    margin-top: 20px;
+.brand a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.tools {
+  grid-area: tools;
+}
+
+.nav a,
+.tools a {
+  display: inline-block;
+  margin: 0 0.4rem;
+}
+
+.hero-feature {
+  grid-area: hero;
+  display: none;
+}
+
+.hero-cta {
+  grid-area: cta;
+}
+
+.article-feature {
+  grid-area: feature;
+}
+
+.article-feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-listing {
+  grid-area: listing;
+  display: grid;
+  gap: 10px;
+}
+
+.article-listing h2 {
+  margin: 0;
+}
+
+.article-listing article {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: none;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Ads: responsive visibility using display: none */
+.ad {
+  grid-area: ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.ad img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ad-large {
+  display: none;
 }
 
 .button {
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  background-color: #c2c4c7;
-  color: #222222;
+  background-color: #3d3e3f;
+  color: #ffffff;
+  text-decoration: none;
   border-radius: 6px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -45,20 +165,59 @@
 .button:focus {
   transform: scale(1.08);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
 
+/* Small devices*/
+@media (min-width: 576px) {
+  h1 {
+    font-size: 1.6rem;
+  }
 
-.puns {
-    font-family: Arial, sans-serif;
-    background-color: #ece6e6;
-    display: grid;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    grid-template-columns: repeat(5, 1fr);
-    font-size: 1rem;
-    text-align: center;
-    padding: 1rem;
-    gap: 10px;
-    margin-top: 20px;
-    grid-template-areas: "pun1 pun2 pun3 pun4 pun5"
-        "pun6 pun7 picture picture picture";
+  .page {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "brand nav nav tools"
+      "hero hero hero hero"
+      "cta cta cta cta"
+      "feature feature feature ad"
+      "listing listing listing listing"
+      "sidebar sidebar sidebar sidebar"
+      "footer footer footer footer";
+  }
 
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .hero-feature {
+    display: block;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .ad-large {
+    display: flex;
+  }
+
+  .ad-small {
+    display: none;
+  }
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+  .page {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      "brand brand nav nav nav nav tools tools"
+      "hero hero hero hero cta cta ad ad"
+      "feature listing listing listing listing listing sidebar sidebar"
+      "footer footer footer footer footer footer footer footer";
+  }
+
+  .ad {
+    align-self: stretch;
+  }
 }
