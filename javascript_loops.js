@@ -1,5 +1,6 @@
 console.log("Week 11 Looping");
-const documentType = "letter";
+const outputElement = document.getElementById("output");
+const documentType = "letter"
 switch (documentType) {
     case "letter":
         console.log("Correspondence");
@@ -24,3 +25,11 @@ while (year <= 1923) {   // Continue while true
 // Output: 1918, 1919, 1920, 1921, 1922, 1923
 console.log("While loop is over");
 
+console.log("Do while loops");
+let count = 3;
+do {
+    console.log(count);
+    count++;
+} while (count < 5);
+// Output: 3, 4
+console.log("Do while loop is over");
