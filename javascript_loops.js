@@ -20,6 +20,7 @@ console.log("While loops");
 let year = 1918;          // Starting value
 while (year <= 1923) {   // Continue while true
     console.log(year);
+    outputElement.innerHTML += year + "<br>";  // Output the value
     year++;              // Change the value
 }
 // Output: 1918, 1919, 1920, 1921, 1922, 1923
@@ -29,6 +30,7 @@ console.log("Do while loops");
 let count = 3;
 do {
     console.log(count);
+    outputElement.innerHTML += count + "<br>";  // Output the value
     count++;
 } while (count < 5);
 // Output: 3, 4
